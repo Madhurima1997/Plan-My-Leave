@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="PlanMyLeave.Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 217px;
+        }
+        .style2
+        {
+            width: 1692px;
+            height: 500px;
+        }
+        .style3
+        {
+            width: 1692px;
+            height: 185px;
+        }
+        .style4
+        {
+            width: 1692px;
+            height: 39px;
+        }
+    </style>
+</head>
+<body style="height: 500px; width: 100%" scrolling="no">
+    <form id="form1" runat="server">
+    <table class="style1" border=0>
+        <tr>
+            <td class="style3" bgcolor="#003399">
+                <asp:Image ID="Image1" 
+                    runat="server" Height="155px" ImageUrl="~/picture/logo.png" 
+                    Width="162px" align="left" style="margin-left:20px; margin-top:10px;" />
+&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" ForeColor="White" Text="Plan My Leave" style="font-size:50px;"></asp:Label>
+                <br />
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label2" runat="server" ForeColor="White" 
+                    Text="Banasthali Vidyapeeth" style="font-size:xx-large;"></asp:Label>
+                <br />
+                <br />
+                <br />
+                </td>
+        </tr>
+        <tr>
+            <td class="style4" bgcolor="#3366FF">
+                </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
